@@ -3,3 +3,7 @@
   font-style: normal; 
   text-shadow: none; 
 }
+
+td.td-middle {
+  vertical-align: middle;
+}
