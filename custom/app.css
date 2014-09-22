@@ -66,4 +66,5 @@ a.home {
 body {
   background: radial-gradient(center, circle cover, #8cbe4f 0%, #5D7E34 100%);
   background: -webkit-radial-gradient(center, circle cover, #8cbe4f 0%, #5D7E34 100%);
+  background: -ms-radial-gradient(center, circle cover, #8cbe4f 0%, #5D7E34 100%);
 }
