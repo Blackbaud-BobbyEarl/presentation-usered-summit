@@ -68,3 +68,8 @@ body {
   background: -webkit-radial-gradient(center, circle cover, #8cbe4f 0%, #5D7E34 100%);
   background: -ms-radial-gradient(center, circle cover, #8cbe4f 0%, #5D7E34 100%);
 }
+
+.reveal .fa-sm {
+  font-size: 16px;
+  margin-left: 10px;
+}
