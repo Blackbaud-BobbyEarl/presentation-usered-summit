@@ -6,53 +6,53 @@ Reveal.initialize({
   history: true,
   center: true,
   theme: Reveal.getQueryHash().theme,
-  transition: Reveal.getQueryHash().transition || 'default', 
+  transition: Reveal.getQueryHash().transition || 'default',
   dependencies: [
-    { 
-      src: 'lib/js/classList.js', 
-      condition: function() { 
-        return !document.body.classList; 
-      } 
-    }, 
-    { 
-      src: 'plugin/markdown/marked.js', 
-      condition: function() { 
-        return !!document.querySelector( '[data-markdown]' ); 
-      } 
+    {
+      src: '../lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
     },
-    { 
-      src: 'plugin/markdown/markdown.js', 
-      condition: function() { 
+    {
+      src: '../plugin/markdown/marked.js',
+      condition: function() {
         return !!document.querySelector( '[data-markdown]' );
       }
     },
-    { 
-      src: 'plugin/highlight/highlight.js', 
-      async: true, 
-      callback: function() { 
+    {
+      src: '../plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector( '[data-markdown]' );
+      }
+    },
+    {
+      src: '../plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
         hljs.initHighlightingOnLoad();
       }
     },
-    { 
-      src: 'plugin/zoom-js/zoom.js', 
-      async: true, 
-      condition: function() { 
-        return !!document.body.classList; 
-      } 
-    },
-    { 
-      src: 'plugin/notes/notes.js', 
-      async: true, 
-      condition: function() { 
+    {
+      src: '../plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
         return !!document.body.classList;
       }
     },
-    { 
-      src: 'plugin/remotes/remotes.js', 
-      async: true, 
-      condition: function() { 
-        return !!document.body.classList; 
-      } 
+    {
+      src: '../plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    },
+    {
+      src: '../plugin/remotes/remotes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
     }
   ]
 });
@@ -61,6 +61,6 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'css/print/pdf.css';
+    link.href = '../css/print/pdf.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
