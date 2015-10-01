@@ -46,14 +46,14 @@ Reveal.initialize({
       condition: function() {
         return !!document.body.classList;
       }
-    },
-    {
-      src: '../plugin/remotes/remotes.js',
-      async: true,
-      condition: function() {
-        return !!document.body.classList;
-      }
     }
+    // {
+    //   src: '../plugin/remotes/remotes.js',
+    //   async: true,
+    //   condition: function() {
+    //     return !!document.body.classList;
+    //   }
+    // }
   ]
 });
 
